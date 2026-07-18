@@ -74,5 +74,3 @@ studenthub-web-frameworks/
 ## Developed By
 
 Burhanuddin Kapadia
-
-CHARUSAT University

@@ -73,7 +73,7 @@ studenthub-web-frameworks/
 
 ## Developed By
 
-Your Name
+Burhanuddin Kapadia
 
 CHARUSAT University
 

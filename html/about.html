@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="../css/style.css">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub | About</title>
     <meta name="description" content="Learn more about StudentHub and its purpose.">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+<body>
+
 
      <header>
-
-        <h1>StudentHub</h1>
+        <div class="container">
+            <h1>StudentHub</h1>
 
         <nav aria-label="Main Navigation">
             <a href="index.html">Home</a>
             <a href="about.html" aria-current="page">About</a>
             <a href="login.html">Login</a>
         </nav>
-
+        </div>
      </header>
 
      <main>
@@ -51,31 +52,45 @@
         </section>
 
         <section>
-            <h2>Why choose StudentHub?</h2>
-            <article>
-                <h3>Easy to Use</h3>
-                <p>
-                    A simple interface that makes academic tasks easier.
-                </p>
-            </article>
 
-            <article>
-                <h3>Centralized Information</h3>
-                <p>
-                    Attendance, assignments, study materials, and notices
-                    are available in one place.
-                </p>
-            </article>
+    <h2>Why Choose StudentHub?</h2>
 
-            <article>
-                <h3>Role-Based Access</h3>
-                <p>
-                    Separate dashboards for students, faculty, and
-                    administrators ensure secure access.
-                </p>
-            </article>
+    <div class="about-grid">
 
-        </section>
+        <article class="about-card">
+
+            <h3>Easy to Use</h3>
+
+            <p>
+                A simple interface that makes academic tasks easier.
+            </p>
+
+        </article>
+
+        <article class="about-card">
+
+            <h3>Centralized Information</h3>
+
+            <p>
+                Attendance, assignments, study materials,
+                and notices are available in one place.
+            </p>
+
+        </article>
+
+        <article class="about-card">
+
+            <h3>Role-Based Access</h3>
+
+            <p>
+                Separate dashboards ensure secure access.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
 
         <section>
             <h2>Contact Information</h2>
@@ -90,6 +105,12 @@
      </main>
 
      <footer>
-        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
-     </footer>
+            <div class="container">
+                <p>
+                &copy; 2026 StudentHub.
+                All Rights Reserved.
+            </p>
+            </div>
+        </footer>
+        </body>
 </html>

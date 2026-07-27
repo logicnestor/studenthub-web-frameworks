@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub | Student Dashboard</title>
     <meta name="description" content="Student Dashboard of StudentHub Portal">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -15,14 +16,12 @@
         <div class="container">
             <h1>StudentHub</h1>
 
-        <nav aria-label="Main Navigation">
+        <nav class="dashboard-nav" aria-label="Student Dashboard Navigation">
             <a href="index.html">Home</a> |
             <a href="about.html">About</a> |
             <a href="student-dashboard.html" aria-current="page">Dashboard</a> |
             <a href="login.html">Logout</a>
         </nav>
-
-        <hr>
         </div>
     </header>
 
@@ -30,8 +29,9 @@
     <main>
 
         <h2>Student Dashboard</h2>
+        <div class="dashboard-grid">
 
-        <!-- Student Information -->
+            <!-- Student Information -->
         <section>
 
             <h3>Student Information</h3>
@@ -43,7 +43,6 @@
 
         </section>
 
-        <hr>
 
         <!-- Academic Overview -->
         <section>
@@ -58,8 +57,6 @@
             </ul>
 
         </section>
-
-        <hr>
 
         <!-- Quick Navigation -->
         <section>
@@ -92,7 +89,6 @@
 
         </section>
 
-        <hr>
 
         <!-- Notifications -->
         <section>
@@ -132,9 +128,10 @@
 
         </section>
 
+        </div>
+
     </main>
 
-    <hr>
 
     <!-- Footer -->
     <footer>

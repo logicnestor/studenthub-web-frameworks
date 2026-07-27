@@ -211,6 +211,19 @@ section {
 
     }
 
+    .dashboard-grid {
+
+    grid-template-columns: 1fr;
+
+}
+
+.about-grid {
+
+    grid-template-columns: 1fr;
+
+}
+
+
 }
 
 /* ==========================================
@@ -362,8 +375,121 @@ button:hover,
 
 }
 
-.about-grid {
 
-    grid-template-columns: 1fr;
+/* ==========================================
+   Dashboard
+========================================== */
+
+.dashboard-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 20px;
 
 }
+
+/* ==========================================
+   Tables
+========================================== */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+}
+
+caption {
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+th {
+
+    background: #1f3c88;
+
+    color: white;
+
+}
+
+th,
+td {
+
+    border: 1px solid #ddd;
+
+    padding: 12px;
+
+    text-align: left;
+
+}
+
+tr:nth-child(even) {
+
+    background: #f8f9fa;
+
+}
+
+/* Dashboard Navigation */
+
+.dashboard-nav ul {
+
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+
+    gap: 15px;
+
+}
+
+.dashboard-nav a {
+
+    display: block;
+
+    background: #1f3c88;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+}
+
+.dashboard-nav a:hover {
+
+    background: #16316d;
+
+}
+
+/* Notifications */
+
+article {
+
+    padding: 15px;
+
+    border-left: 5px solid #1f3c88;
+
+    background: #f8f9fa;
+
+    margin-bottom: 15px;
+
+    border-radius: 5px;
+
+}
+

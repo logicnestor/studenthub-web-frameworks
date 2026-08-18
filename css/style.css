@@ -195,19 +195,68 @@ section {
 
 @media (max-width: 768px) {
 
+
     header .container {
 
-        flex-direction: column;
+        flex-direction: row;
 
-        text-align: center;
+        justify-content: space-between;
+
+        text-align: left;
+
+    }
+
+    .nav-wrapper {
+
+        position: relative;
+
+    }
+
+    .menu-toggle {
+
+        display: block;
 
     }
 
     nav {
 
+        display: none;
+
+        position: absolute;
+
+        top: 45px;
+
+        right: 0;
+
         flex-direction: column;
 
-        margin-top: 15px;
+        gap: 0;
+
+        min-width: 180px;
+
+        background: #1f3c88;
+
+        padding: 10px;
+
+        border-radius: 8px;
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+        z-index: 1000;
+
+    }
+
+    nav.active {
+
+        display: flex;
+
+    }
+
+    nav a {
+
+        padding: 10px;
+
+        display: block;
 
     }
 
@@ -265,6 +314,64 @@ section {
     grid-template-columns: 1fr;
 
 }
+
+/* ==========================================
+   Responsive Slider
+========================================== */
+
+    .slider {
+
+        min-height: 330px;
+
+    }
+
+
+    .slide {
+
+        min-height: 330px;
+
+        padding: 45px 65px;
+
+    }
+
+
+    .slide-content h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    .slide-content p {
+
+        font-size: 15px;
+
+    }
+
+
+    .slider-btn {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 20px;
+
+    }
+
+
+    .slider-prev {
+
+        left: 10px;
+
+    }
+
+
+    .slider-next {
+
+        right: 10px;
+
+    }
 
 
 }
@@ -954,5 +1061,843 @@ tr:nth-child(even) {
 .assignment-announcements article p {
 
     margin: 0;
+
+}
+
+/* ==========================================
+   Hamburger Menu
+   Practical 4
+========================================== */
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    background: transparent;
+}
+
+/* ==========================================
+   Theme Switcher
+   Practical 4
+========================================== */
+
+.theme-toggle {
+
+    background: transparent;
+
+    color: white;
+
+    border: none;
+
+    font-size: 22px;
+
+    padding: 6px 10px;
+
+    cursor: pointer;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+
+}
+
+.theme-toggle:hover {
+
+    background: rgba(255, 255, 255, 0.15);
+
+}
+
+/* ==========================================
+   Dark Theme
+========================================== */
+
+body.dark-theme {
+
+    background-color: #121212;
+
+    color: #e0e0e0;
+
+}
+
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4 {
+
+    color: #90caf9;
+
+}
+
+
+body.dark-theme section {
+
+    background-color: #1e1e1e;
+
+    color: #e0e0e0;
+
+}
+
+
+body.dark-theme .info-grid div,
+body.dark-theme .profile-item,
+body.dark-theme .faculty-info .info-item,
+body.dark-theme .assignment-announcements article,
+body.dark-theme .faculty-notifications article {
+
+    background-color: #2a2a2a;
+
+}
+
+
+body.dark-theme table {
+
+    color: #e0e0e0;
+
+}
+
+
+body.dark-theme td {
+
+    border-color: #444;
+
+}
+
+
+body.dark-theme tr:nth-child(even) {
+
+    background-color: #252525;
+
+}
+
+
+body.dark-theme input,
+body.dark-theme select {
+
+    background-color: #2a2a2a;
+
+    color: #ffffff;
+
+    border-color: #555;
+
+}
+
+
+body.dark-theme a:not(header a):not(footer a) {
+
+    color: #90caf9;
+
+}
+
+
+body.dark-theme footer {
+
+    background-color: #0d1b36;
+
+}
+
+/* ==========================================
+   Notification Banner
+   Practical 4
+========================================== */
+
+.notification-banner {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #fff3cd;
+
+    color: #664d03;
+
+    border: 1px solid #ffecb5;
+
+    padding: 15px 20px;
+
+    margin-bottom: 25px;
+
+    border-radius: 8px;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.notification-banner p {
+
+    margin: 0;
+
+}
+
+
+.notification-close {
+
+    background: transparent;
+
+    color: #664d03;
+
+    border: none;
+
+    font-size: 20px;
+
+    padding: 5px 10px;
+
+    margin: 0;
+
+    cursor: pointer;
+
+}
+
+
+.notification-close:hover {
+
+    background: rgba(0, 0, 0, 0.08);
+
+}
+
+.notification-banner.hide {
+
+    opacity: 0;
+
+    transform: translateY(-10px);
+
+    pointer-events: none;
+
+}
+
+body.dark-theme .notification-banner {
+
+    background: #332b00;
+
+    color: #ffe69c;
+
+    border-color: #665c00;
+
+}
+
+
+body.dark-theme .notification-close {
+
+    color: #ffe69c;
+
+}
+
+/* ==========================================
+   Modal Popup
+   Practical 4
+========================================== */
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 2000;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+
+.modal.active {
+
+    display: flex;
+
+}
+
+
+.modal-content {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 550px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    animation: modalOpen 0.3s ease;
+
+}
+
+
+.modal-content h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.modal-content p {
+
+    margin-bottom: 15px;
+
+}
+
+
+.modal-close {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 15px;
+
+    background: transparent;
+
+    color: #333;
+
+    border: none;
+
+    font-size: 22px;
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+
+}
+
+
+.modal-close:hover {
+
+    background: #f0f0f0;
+
+}
+
+
+/* Modal Animation */
+
+@keyframes modalOpen {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* Dark Theme Modal */
+
+body.dark-theme .modal-content {
+
+    background: #1e1e1e;
+
+    color: #e0e0e0;
+
+}
+
+
+body.dark-theme .modal-close {
+
+    color: #ffffff;
+
+}
+
+
+body.dark-theme .modal-close:hover {
+
+    background: #333333;
+
+}
+
+/* ==========================================
+   FAQ Accordion
+   Practical 4
+========================================== */
+
+.faq-container {
+
+    margin-top: 20px;
+
+}
+
+
+.faq-item {
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    margin-bottom: 12px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+}
+
+
+.faq-question {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #f8f9fa;
+
+    color: #1f3c88;
+
+    border: none;
+
+    padding: 18px 20px;
+
+    margin: 0;
+
+    text-align: left;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.faq-question:hover {
+
+    background: #eef2f8;
+
+}
+
+
+.faq-icon {
+
+    font-size: 22px;
+
+    min-width: 25px;
+
+    text-align: center;
+
+}
+
+
+.faq-answer {
+
+    padding: 18px 20px;
+
+    border-top: 1px solid #ddd;
+
+    background: #ffffff;
+
+}
+
+
+.faq-answer p {
+
+    margin: 0;
+
+}
+
+/* Dark Theme FAQ */
+
+body.dark-theme .faq-item {
+
+    background: #1e1e1e;
+
+    border-color: #444;
+
+}
+
+
+body.dark-theme .faq-question {
+
+    background: #2a2a2a;
+
+    color: #90caf9;
+
+}
+
+
+body.dark-theme .faq-question:hover {
+
+    background: #333333;
+
+}
+
+
+body.dark-theme .faq-answer {
+
+    background: #1e1e1e;
+
+    border-color: #444;
+
+}
+
+/* ==========================================
+   Content Slider
+   Practical 4
+========================================== */
+
+.slider-section {
+
+    text-align: center;
+
+}
+
+
+.slider {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #1f3c88;
+
+}
+
+
+/* ==========================================
+   Slides
+========================================== */
+
+.slide {
+
+    display: none;
+
+    min-height: 300px;
+
+    padding: 50px 80px;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.slide.active {
+
+    display: flex;
+
+    animation: slideFade 0.5s ease;
+
+}
+
+
+.slide-content {
+
+    max-width: 700px;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+.slide-content h3 {
+
+    color: white;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.slide-content p {
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* ==========================================
+   Slider Buttons
+========================================== */
+
+.slider-btn {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 45px;
+
+    height: 45px;
+
+    padding: 0;
+
+    margin: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+}
+
+
+.slider-btn:hover {
+
+    background: rgba(255, 255, 255, 0.35);
+
+}
+
+
+.slider-prev {
+
+    left: 20px;
+
+}
+
+
+.slider-next {
+
+    right: 20px;
+
+}
+
+
+/* ==========================================
+   Slider Dots
+========================================== */
+
+.slider-dots {
+
+    position: absolute;
+
+    bottom: 18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 10px;
+
+    z-index: 5;
+
+}
+
+
+.slider-dot {
+
+    width: 11px;
+
+    height: 11px;
+
+    padding: 0;
+
+    margin: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    cursor: pointer;
+
+}
+
+
+.slider-dot.active {
+
+    background: white;
+
+}
+
+
+/* ==========================================
+   Slider Animation
+========================================== */
+
+@keyframes slideFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+/* ==========================================
+   Dark Theme Slider
+========================================== */
+
+body.dark-theme .slider {
+
+    background: #162447;
+
+}
+
+/* ==========================================
+   UI Interaction & Transition Effects
+   Practical 4
+========================================== */
+
+/* Smooth transitions for interactive elements */
+
+a,
+button,
+.feature-card,
+.about-card,
+section,
+.faq-item {
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+/* ==========================================
+   Button Interaction
+========================================== */
+
+button:not(.menu-toggle):not(.theme-toggle):not(.modal-close):not(.slider-btn):not(.slider-dot):hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+button:not(.menu-toggle):not(.theme-toggle):not(.modal-close):not(.slider-btn):not(.slider-dot):active {
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================
+   Card Interaction
+========================================== */
+
+.feature-card:hover,
+.about-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* ==========================================
+   Keyboard Focus
+========================================== */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+
+    outline: 3px solid #ffd166;
+
+    outline-offset: 3px;
+
+}
+
+
+/* ==========================================
+   Reduced Motion Accessibility
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        scroll-behavior: auto !important;
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+
+    }
 
 }

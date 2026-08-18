@@ -11,30 +11,239 @@
     </head>
     <body>
         <header>
-            <div class="container">
-                <h1>StudentHub</h1>
-            <nav>
+
+    <div class="container">
+
+        <h1>StudentHub</h1>
+
+        <div class="nav-wrapper">
+
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode">
+                🌙
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav
+                id="main-navigation"
+                aria-label="Main Navigation">
+
                 <a href="index.html">Home</a>
+
                 <a href="about.html">About</a>
+
                 <a href="login.html">Login</a>
+
             </nav>
-            </div>
-        </header>
+
+        </div>
+
+    </div>
+
+</header>
         <main>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Notification Banner -->
 
-        <h2>Welcome to StudentHub</h2>
+    <div
+        class="notification-banner"
+        id="notification-banner"
+        role="status"
+        aria-live="polite">
 
         <p>
-            StudentHub is a student management portal designed for students,
-            faculty, and administrators.
+            📢 New assignment has been added to StudentHub.
         </p>
 
-        <a href="login.html" class="btn">Get Started</a>
+        <button
+            type="button"
+            id="notification-close"
+            class="notification-close"
+            aria-label="Close notification">
 
-    </section>
+            ✕
+
+        </button>
+
+    </div>
+
+    <!-- Hero Section -->
+    <section>
+
+    <h2>Welcome to StudentHub</h2>
+
+    <p>
+        StudentHub is a student management portal designed
+        for students, faculty and administrators.
+    </p>
+
+    <button
+        type="button"
+        id="open-modal"
+        class="btn">
+        Learn More
+    </button>
+
+</section>
+
+<!-- ==========================================
+     StudentHub Content Slider
+     Practical 4
+========================================== -->
+
+<section class="slider-section">
+
+    <h2>StudentHub Highlights</h2>
+
+    <div
+        class="slider"
+        id="studenthub-slider"
+        aria-label="StudentHub highlights">
+
+        <!-- Slide 1 -->
+
+        <div class="slide active">
+
+            <div class="slide-content">
+
+                <h3>Attendance Management</h3>
+
+                <p>
+                    Track attendance records and monitor
+                    academic attendance from one centralized
+                    platform.
+                </p>
+
+                <a
+                    href="attendance.html"
+                    class="btn">
+                    View Attendance
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide 2 -->
+
+        <div class="slide">
+
+            <div class="slide-content">
+
+                <h3>Assignments</h3>
+
+                <p>
+                    View current assignments, submission
+                    deadlines, and assignment status easily.
+                </p>
+
+                <a
+                    href="assignments.html"
+                    class="btn">
+                    View Assignments
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide 3 -->
+
+        <div class="slide">
+
+            <div class="slide-content">
+
+                <h3>Study Materials</h3>
+
+                <p>
+                    Access lecture notes, practical manuals,
+                    presentations, and other learning resources.
+                </p>
+
+                <a
+                    href="study-materials.html"
+                    class="btn">
+                    Study Materials
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Previous Button -->
+
+        <button
+            type="button"
+            class="slider-btn slider-prev"
+            id="slider-prev"
+            aria-label="Previous slide">
+
+            &#10094;
+
+        </button>
+
+
+        <!-- Next Button -->
+
+        <button
+            type="button"
+            class="slider-btn slider-next"
+            id="slider-next"
+            aria-label="Next slide">
+
+            &#10095;
+
+        </button>
+
+
+        <!-- Slider Indicators -->
+
+        <div
+            class="slider-dots"
+            aria-label="Slide navigation">
+
+            <button
+                type="button"
+                class="slider-dot active"
+                data-slide="0"
+                aria-label="Go to slide 1"
+                aria-current="true">
+            </button>
+
+            <button
+                type="button"
+                class="slider-dot"
+                data-slide="1"
+                aria-label="Go to slide 2">
+            </button>
+
+            <button
+                type="button"
+                class="slider-dot"
+                data-slide="2"
+                aria-label="Go to slide 3">
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- Features -->
     <section>
@@ -93,6 +302,52 @@
     </section>
 
 </main>
+<!-- Modal -->
+
+<div
+    class="modal"
+    id="studenthub-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+    aria-hidden="true">
+
+    <div class="modal-content">
+
+        <button
+            type="button"
+            class="modal-close"
+            id="close-modal"
+            aria-label="Close dialog">
+            ✕
+        </button>
+
+        <h2 id="modal-title">
+            About StudentHub
+        </h2>
+
+        <p>
+            StudentHub is a centralized academic management
+            portal designed for students, faculty, and
+            administrators.
+        </p>
+
+        <p>
+            The portal provides access to attendance,
+            assignments, study materials, dashboards,
+            and academic information.
+        </p>
+
+        <button
+            type="button"
+            class="btn"
+            id="modal-close-button">
+            Close
+        </button>
+
+    </div>
+
+</div>
         <footer>
             <div class="container">
                 <p>
@@ -101,6 +356,8 @@
             </p>
             </div>
         </footer>
+
+    <script src="../js/script.js"></script>
 
     </body>
 </html>

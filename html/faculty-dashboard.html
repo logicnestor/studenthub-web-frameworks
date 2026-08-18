@@ -13,6 +13,8 @@
     <meta name="description"
           content="Faculty Dashboard of StudentHub">
 
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
@@ -20,25 +22,28 @@
     <!-- Header -->
 
     <header>
+
         <div class="container">
+
             <h1>StudentHub</h1>
 
-        <nav aria-label="Main Navigation">
+            <nav aria-label="Main Navigation">
 
-            <a href="index.html">Home</a> |
+                <a href="index.html">Home</a>
 
-            <a href="faculty-dashboard.html"
-               aria-current="page">
-               Faculty Dashboard
-            </a> |
+                <a href="faculty-dashboard.html"
+                   aria-current="page">
+                    Faculty Dashboard
+                </a>
 
-            <a href="login.html">Logout</a>
+                <a href="login.html">Logout</a>
 
-        </nav>
+            </nav>
 
-        <hr>
         </div>
+
     </header>
+
 
     <!-- Main -->
 
@@ -46,169 +51,234 @@
 
         <h2>Faculty Dashboard</h2>
 
-        <!-- Faculty Information -->
+        <div class="dashboard-grid">
 
-        <section>
 
-            <h3>Faculty Information</h3>
+            <!-- Faculty Information -->
 
-            <p><strong>Name:</strong> Dr. Rajesh Patel</p>
+            <section>
 
-            <p><strong>Department:</strong> Computer Science</p>
+                <h3>Faculty Information</h3>
 
-            <p><strong>Designation:</strong> Assistant Professor</p>
+                <div class="faculty-info">
 
-            <p><strong>Email:</strong> rajesh.patel@college.edu</p>
+                    <div class="info-item">
 
-        </section>
+                        <strong>Name</strong>
 
-        <hr>
+                        <p>Dr. Rajesh Patel</p>
 
-        <!-- Assigned Subjects -->
+                    </div>
 
-        <section>
+                    <div class="info-item">
 
-            <h3>Assigned Subjects</h3>
+                        <strong>Department</strong>
 
-            <table border="1">
+                        <p>Computer Science</p>
 
-                <caption>
-                    Teaching Subjects
-                </caption>
+                    </div>
 
-                <thead>
+                    <div class="info-item">
 
-                    <tr>
+                        <strong>Designation</strong>
 
-                        <th scope="col">Subject</th>
+                        <p>Assistant Professor</p>
 
-                        <th scope="col">Semester</th>
+                    </div>
 
-                        <th scope="col">Division</th>
+                    <div class="info-item">
 
-                    </tr>
+                        <strong>Email</strong>
 
-                </thead>
+                        <p>rajesh.patel@college.edu</p>
 
-                <tbody>
+                    </div>
 
-                    <tr>
+                </div>
 
-                        <td>Web Development Framework</td>
+            </section>
 
-                        <td>3</td>
 
-                        <td>A</td>
+            <!-- Assigned Subjects -->
 
-                    </tr>
+            <section>
 
-                    <tr>
+                <h3>Assigned Subjects</h3>
 
-                        <td>Python Programming</td>
+                <div class="table-container">
 
-                        <td>3</td>
+                    <table>
 
-                        <td>B</td>
+                        <caption>
+                            Teaching Subjects
+                        </caption>
 
-                    </tr>
+                        <thead>
 
-                </tbody>
+                            <tr>
 
-            </table>
+                                <th scope="col">
+                                    Subject
+                                </th>
 
-        </section>
+                                <th scope="col">
+                                    Semester
+                                </th>
 
-        <hr>
+                                <th scope="col">
+                                    Division
+                                </th>
 
-        <!-- Quick Actions -->
+                            </tr>
 
-        <section>
+                        </thead>
 
-            <h3>Quick Actions</h3>
+                        <tbody>
 
-            <nav aria-label="Faculty Actions">
+                            <tr>
 
-                <ul>
+                                <td>
+                                    Web Development Framework
+                                </td>
 
-                    <li>
-                        <a href="#">Mark Attendance</a>
-                    </li>
+                                <td>3</td>
 
-                    <li>
-                        <a href="#">Upload Study Material</a>
-                    </li>
+                                <td>A</td>
 
-                    <li>
-                        <a href="#">Add Assignment</a>
-                    </li>
+                            </tr>
 
-                    <li>
-                        <a href="#">View Student Attendance</a>
-                    </li>
+                            <tr>
 
-                </ul>
+                                <td>
+                                    Python Programming
+                                </td>
 
-            </nav>
+                                <td>3</td>
 
-        </section>
+                                <td>B</td>
 
-        <hr>
+                            </tr>
 
-        <!-- Notifications -->
+                        </tbody>
 
-        <section>
+                    </table>
 
-            <h3>Recent Notifications</h3>
+                </div>
 
-            <article>
+            </section>
 
-                <h4>Assignment Submission</h4>
 
-                <p>
-                    Five students submitted the latest WDF assignment.
-                </p>
+            <!-- Quick Actions -->
 
-            </article>
+            <section>
 
-            <article>
+                <h3>Quick Actions</h3>
 
-                <h4>Attendance Reminder</h4>
+                <nav class="dashboard-nav"
+                     aria-label="Faculty Actions">
 
-                <p>
-                    Please complete attendance before 5:00 PM.
-                </p>
+                    <ul>
 
-            </article>
+                        <li>
 
-        </section>
+                            <a href="#">
+                                Mark Attendance
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                Upload Study Material
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                Add Assignment
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                View Student Attendance
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </section>
+
+
+            <!-- Notifications -->
+
+            <section>
+
+                <h3>Recent Notifications</h3>
+
+                <div class="faculty-notifications">
+
+                    <article>
+
+                        <h4>Assignment Submission</h4>
+
+                        <p>
+                            Five students submitted the latest
+                            WDF assignment.
+                        </p>
+
+                    </article>
+
+                    <article>
+
+                        <h4>Attendance Reminder</h4>
+
+                        <p>
+                            Please complete attendance before
+                            5:00 PM.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+        </div>
 
     </main>
 
-    <hr>
 
     <!-- Footer -->
 
     <footer>
+
         <div class="container">
 
-        <p>
+            <p>
+                &copy; 2026 StudentHub.
+                All Rights Reserved.
+            </p>
 
-            &copy; 2026 StudentHub.
-            All Rights Reserved.
+            <address>
 
-        </p>
+                Email:
 
-        <address>
+                <a href="mailto:info@studenthub.com">
+                    info@studenthub.com
+                </a>
 
-            Email:
+            </address>
 
-            <a href="mailto:info@studenthub.com">
-
-                info@studenthub.com
-
-            </a>
-
-        </address>
         </div>
 
     </footer>

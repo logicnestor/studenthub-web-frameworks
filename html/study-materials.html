@@ -2,171 +2,277 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>StudentHub | Study Materials</title>
-    <meta name="description" content="Study materials available in StudentHub">
+
+    <meta name="description"
+          content="Study materials available in StudentHub">
+
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
 
     <!-- Header -->
     <header>
+
         <div class="container">
+
             <h1>StudentHub</h1>
 
-        <nav aria-label="Main Navigation">
+            <nav aria-label="Main Navigation">
 
-            <a href="index.html">Home</a> |
-            <a href="student-dashboard.html">Dashboard</a> |
-            <a href="study-materials.html" aria-current="page">Study Materials</a> |
-            <a href="login.html">Logout</a>
+                <a href="index.html">Home</a>
 
-        </nav>
+                <a href="student-dashboard.html">Dashboard</a>
 
-        <hr>
+                <a href="study-materials.html"
+                   aria-current="page">
+                    Study Materials
+                </a>
+
+                <a href="login.html">Logout</a>
+
+            </nav>
+
         </div>
+
     </header>
 
-    <!-- Main -->
+
+    <!-- Main Content -->
     <main>
 
         <h2>Study Materials</h2>
 
+
         <!-- Student Information -->
-        <section>
+        <section class="student-info">
 
             <h3>Student Information</h3>
 
-            <p><strong>Name:</strong> John Doe</p>
-            <p><strong>Enrollment Number:</strong> 23CS001</p>
-            <p><strong>Department:</strong> Computer Science</p>
-            <p><strong>Semester:</strong> 3</p>
+            <div class="info-grid">
+
+                <div>
+                    <strong>Name</strong>
+                    <p>John Doe</p>
+                </div>
+
+                <div>
+                    <strong>Enrollment Number</strong>
+                    <p>23CS001</p>
+                </div>
+
+                <div>
+                    <strong>Department</strong>
+                    <p>Computer Science</p>
+                </div>
+
+                <div>
+                    <strong>Semester</strong>
+                    <p>3</p>
+                </div>
+
+            </div>
 
         </section>
 
-        <hr>
 
-        <!-- Materials -->
+        <!-- Available Materials -->
         <section>
 
             <h3>Available Study Materials</h3>
 
-            <table border="1">
+            <div class="table-container">
 
-                <caption>Study Materials</caption>
+                <table>
 
-                <thead>
+                    <caption>
+                        Available Study Materials
+                    </caption>
 
-                    <tr>
+                    <thead>
 
-                        <th scope="col">Subject</th>
-                        <th scope="col">Material</th>
-                        <th scope="col">Faculty</th>
-                        <th scope="col">Upload Date</th>
-                        <th scope="col">Download</th>
+                        <tr>
 
-                    </tr>
+                            <th scope="col">Subject</th>
 
-                </thead>
+                            <th scope="col">Material</th>
 
-                <tbody>
+                            <th scope="col">Faculty</th>
 
-                    <tr>
-                        <td>Web Development Framework</td>
-                        <td>HTML5 Notes</td>
-                        <td>Dr. Shah</td>
-                        <td>15-08-2026</td>
-                        <td><a href="#">Download</a></td>
-                    </tr>
+                            <th scope="col">Upload Date</th>
 
-                    <tr>
-                        <td>Python Programming</td>
-                        <td>Functions PDF</td>
-                        <td>Prof. Patel</td>
-                        <td>18-08-2026</td>
-                        <td><a href="#">Download</a></td>
-                    </tr>
+                            <th scope="col">Download</th>
 
-                    <tr>
-                        <td>Database Management System</td>
-                        <td>Normalization Notes</td>
-                        <td>Dr. Mehta</td>
-                        <td>19-08-2026</td>
-                        <td><a href="#">Download</a></td>
-                    </tr>
+                        </tr>
 
-                    <tr>
-                        <td>Computer Networks</td>
-                        <td>OSI Model PPT</td>
-                        <td>Prof. Joshi</td>
-                        <td>20-08-2026</td>
-                        <td><a href="#">Download</a></td>
-                    </tr>
+                    </thead>
 
-                </tbody>
+                    <tbody>
 
-            </table>
+                        <tr>
+
+                            <td>Web Development Framework</td>
+
+                            <td>HTML5 Notes</td>
+
+                            <td>Dr. Shah</td>
+
+                            <td>15-08-2026</td>
+
+                            <td>
+                                <a href="#"
+                                   class="download-btn">
+                                    Download
+                                </a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Python Programming</td>
+
+                            <td>Functions PDF</td>
+
+                            <td>Prof. Patel</td>
+
+                            <td>18-08-2026</td>
+
+                            <td>
+                                <a href="#"
+                                   class="download-btn">
+                                    Download
+                                </a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Database Management System</td>
+
+                            <td>Normalization Notes</td>
+
+                            <td>Dr. Mehta</td>
+
+                            <td>19-08-2026</td>
+
+                            <td>
+                                <a href="#"
+                                   class="download-btn">
+                                    Download
+                                </a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Computer Networks</td>
+
+                            <td>OSI Model PPT</td>
+
+                            <td>Prof. Joshi</td>
+
+                            <td>20-08-2026</td>
+
+                            <td>
+                                <a href="#"
+                                   class="download-btn">
+                                    Download
+                                </a>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
 
         </section>
 
-        <hr>
 
         <!-- Latest Uploads -->
         <section>
 
             <h3>Latest Uploads</h3>
 
-            <article>
+            <div class="upload-grid">
 
-                <h4>New HTML Notes</h4>
+                <article>
 
-                <p>
-                    HTML5 semantic elements notes uploaded by the WDF faculty.
-                </p>
+                    <h4>New HTML Notes</h4>
 
-            </article>
+                    <p>
+                        HTML5 semantic element notes uploaded
+                        by the WDF faculty.
+                    </p>
 
-            <article>
+                </article>
 
-                <h4>Python Lab Manual</h4>
 
-                <p>
-                    Updated Python practical manual is now available.
-                </p>
+                <article>
 
-            </article>
+                    <h4>Python Lab Manual</h4>
 
-            <article>
+                    <p>
+                        Updated Python practical manual
+                        is now available.
+                    </p>
 
-                <h4>DBMS Unit 2 Notes</h4>
+                </article>
 
-                <p>
-                    Database normalization notes have been uploaded.
-                </p>
 
-            </article>
+                <article>
+
+                    <h4>DBMS Unit 2 Notes</h4>
+
+                    <p>
+                        Database normalization notes
+                        have been uploaded.
+                    </p>
+
+                </article>
+
+            </div>
 
         </section>
 
     </main>
 
-    <hr>
 
     <!-- Footer -->
     <footer>
+
         <div class="container">
-            <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
 
-        <address>
+            <p>
+                &copy; 2026 StudentHub.
+                All Rights Reserved.
+            </p>
 
-            Email:
-            <a href="mailto:info@studenthub.com">
-                info@studenthub.com
-            </a>
+            <address>
 
-        </address>
+                Email:
+
+                <a href="mailto:info@studenthub.com">
+                    info@studenthub.com
+                </a>
+
+            </address>
+
         </div>
+
     </footer>
 
 </body>

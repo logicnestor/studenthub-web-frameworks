@@ -1901,3 +1901,272 @@ select:focus-visible {
     }
 
 }
+
+/* ==========================================
+   Registration Form
+   Practical 5
+========================================== */
+
+.registration-section {
+
+    max-width: 700px;
+
+    margin: 40px auto;
+
+}
+
+
+.registration-section h2 {
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+
+.registration-section > p {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+}
+
+
+.form-group input,
+.form-group select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    background: white;
+
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+
+    outline: none;
+
+    border-color: #1f3c88;
+
+    box-shadow:
+        0 0 0 3px rgba(31, 60, 136, 0.15);
+
+}
+
+
+/* ==========================================
+   Validation States
+========================================== */
+
+.form-group input.invalid,
+.form-group select.invalid {
+
+    border-color: #dc3545;
+
+}
+
+
+.form-group input.valid,
+.form-group select.valid {
+
+    border-color: #198754;
+
+}
+
+
+.error-message {
+
+    display: block;
+
+    min-height: 20px;
+
+    margin-top: 5px;
+
+    color: #dc3545;
+
+    font-size: 14px;
+
+}
+
+
+/* ==========================================
+   Password Strength
+========================================== */
+
+.password-strength {
+
+    margin-top: 8px;
+
+    font-size: 14px;
+
+}
+
+
+#strength-text {
+
+    font-weight: bold;
+
+}
+
+
+/* ==========================================
+   Gender
+========================================== */
+
+.gender-group {
+
+    border: 1px solid #cccccc;
+
+    padding: 20px;
+
+    border-radius: 6px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.gender-group legend {
+
+    font-weight: bold;
+
+    padding: 0 8px;
+
+}
+
+
+.gender-options {
+
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.gender-options label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-weight: normal;
+
+}
+
+
+.gender-options input {
+
+    width: auto;
+
+}
+
+
+/* ==========================================
+   Terms
+========================================== */
+
+.terms-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.terms-group label {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    font-weight: normal;
+
+}
+
+
+.terms-group input {
+
+    margin-top: 5px;
+
+}
+
+
+.terms-group a {
+
+    color: #1f3c88;
+
+}
+
+
+/* ==========================================
+   Form Message
+========================================== */
+
+.form-message {
+
+    margin-bottom: 15px;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    display: none;
+
+}
+
+
+.form-message.success {
+
+    display: block;
+
+    background: #d1e7dd;
+
+    color: #0f5132;
+
+}
+
+
+.form-message.error {
+
+    display: block;
+
+    background: #f8d7da;
+
+    color: #842029;
+
+}

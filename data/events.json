@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "TechFest 2026",
+        "category": "Technical",
+        "date": "2026-10-05",
+        "location": "CHARUSAT Auditorium",
+        "description": "Annual technical festival featuring coding competitions, workshops, and technology exhibitions."
+    },
+    {
+        "id": 2,
+        "title": "Hackathon 2026",
+        "category": "Technical",
+        "date": "2026-10-12",
+        "location": "Innovation Lab",
+        "description": "A 24-hour coding event where students develop innovative software solutions."
+    },
+    {
+        "id": 3,
+        "title": "Web Development Workshop",
+        "category": "Workshop",
+        "date": "2026-10-18",
+        "location": "Computer Lab 1",
+        "description": "Hands-on workshop covering modern HTML, CSS, JavaScript, and web development practices."
+    },
+    {
+        "id": 4,
+        "title": "AI and Machine Learning Seminar",
+        "category": "Seminar",
+        "date": "2026-10-22",
+        "location": "Seminar Hall",
+        "description": "Introduction to artificial intelligence and machine learning applications."
+    },
+    {
+        "id": 5,
+        "title": "Sports Meet",
+        "category": "Sports",
+        "date": "2026-11-02",
+        "location": "University Sports Ground",
+        "description": "Annual sports event featuring athletics and team sports."
+    },
+    {
+        "id": 6,
+        "title": "Cyber Security Awareness",
+        "category": "Seminar",
+        "date": "2026-11-08",
+        "location": "Seminar Hall",
+        "description": "Awareness session covering cybersecurity threats and safe online practices."
+    },
+    {
+        "id": 7,
+        "title": "Coding Contest",
+        "category": "Technical",
+        "date": "2026-11-15",
+        "location": "Computer Lab 2",
+        "description": "Competitive programming contest for students interested in problem solving."
+    },
+    {
+        "id": 8,
+        "title": "Entrepreneurship Workshop",
+        "category": "Workshop",
+        "date": "2026-11-20",
+        "location": "Innovation Center",
+        "description": "Workshop on startup ideas, business models, and entrepreneurship."
+    },
+    {
+        "id": 9,
+        "title": "Cultural Night",
+        "category": "Cultural",
+        "date": "2026-12-01",
+        "location": "University Auditorium",
+        "description": "An evening celebrating student talent through music, dance, and performances."
+    },
+    {
+        "id": 10,
+        "title": "Cloud Computing Seminar",
+        "category": "Seminar",
+        "date": "2026-12-08",
+        "location": "Computer Lab 3",
+        "description": "Seminar introducing cloud computing concepts and modern cloud platforms."
+    },
+    {
+        "id": 11,
+        "title": "Photography Contest",
+        "category": "Cultural",
+        "date": "2026-12-12",
+        "location": "Student Activity Center",
+        "description": "Photography competition showcasing creative student work."
+    },
+    {
+        "id": 12,
+        "title": "Git and GitHub Workshop",
+        "category": "Workshop",
+        "date": "2026-12-18",
+        "location": "Computer Lab 1",
+        "description": "Practical workshop covering Git, GitHub, branches, commits, and collaboration."
+    },
+    {
+        "id": 13,
+        "title": "Annual Sports Tournament",
+        "category": "Sports",
+        "date": "2027-01-10",
+        "location": "University Sports Ground",
+        "description": "Inter-department sports tournament for university students."
+    },
+    {
+        "id": 14,
+        "title": "Career Guidance Session",
+        "category": "Career",
+        "date": "2027-01-18",
+        "location": "Seminar Hall",
+        "description": "Career guidance session covering placements, interviews, and professional development."
+    },
+    {
+        "id": 15,
+        "title": "Project Exhibition",
+        "category": "Technical",
+        "date": "2027-01-25",
+        "location": "Exhibition Hall",
+        "description": "Students present their academic and innovative software and hardware projects."
+    }
+]

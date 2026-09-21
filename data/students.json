@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "name": "Aarav Patel",
+        "email": "aarav.patel@studenthub.com",
+        "course": "Computer Science Engineering",
+        "year": "Third Year"
+    },
+    {
+        "id": 2,
+        "name": "Burhanuddin Kapadia",
+        "email": "burhanuddin.kapadia@studenthub.com",
+        "course": "Computer Science Engineering",
+        "year": "Third Year"
+    },
+    {
+        "id": 3,
+        "name": "Rahul Shah",
+        "email": "rahul.shah@studenthub.com",
+        "course": "Information Technology",
+        "year": "Second Year"
+    },
+    {
+        "id": 4,
+        "name": "Ayesha Khan",
+        "email": "ayesha.khan@studenthub.com",
+        "course": "Computer Engineering",
+        "year": "Fourth Year"
+    },
+    {
+        "id": 5,
+        "name": "Dev Mehta",
+        "email": "dev.mehta@studenthub.com",
+        "course": "Mechanical Engineering",
+        "year": "First Year"
+    },
+    {
+        "id": 6,
+        "name": "Zoya Sheikh",
+        "email": "zoya.sheikh@studenthub.com",
+        "course": "Computer Science Engineering",
+        "year": "Second Year"
+    },
+    {
+        "id": 7,
+        "name": "Karan Joshi",
+        "email": "karan.joshi@studenthub.com",
+        "course": "Information Technology",
+        "year": "Third Year"
+    },
+    {
+        "id": 8,
+        "name": "Mahi Desai",
+        "email": "mahi.desai@studenthub.com",
+        "course": "Computer Engineering",
+        "year": "First Year"
+    },
+    {
+        "id": 9,
+        "name": "Yash Trivedi",
+        "email": "yash.trivedi@studenthub.com",
+        "course": "Computer Science Engineering",
+        "year": "Fourth Year"
+    },
+    {
+        "id": 10,
+        "name": "Sara Merchant",
+        "email": "sara.merchant@studenthub.com",
+        "course": "Information Technology",
+        "year": "First Year"
+    },
+    {
+        "id": 11,
+        "name": "Harsh Patel",
+        "email": "harsh.patel@studenthub.com",
+        "course": "Mechanical Engineering",
+        "year": "Second Year"
+    },
+    {
+        "id": 12,
+        "name": "Fatima Ali",
+        "email": "fatima.ali@studenthub.com",
+        "course": "Computer Science Engineering",
+        "year": "Fourth Year"
+    },
+    {
+        "id": 13,
+        "name": "Riya Shah",
+        "email": "riya.shah@studenthub.com",
+        "course": "Computer Engineering",
+        "year": "Third Year"
+    },
+    {
+        "id": 14,
+        "name": "Omar Khan",
+        "email": "omar.khan@studenthub.com",
+        "course": "Information Technology",
+        "year": "Fourth Year"
+    },
+    {
+        "id": 15,
+        "name": "Neha Patel",
+        "email": "neha.patel@studenthub.com",
+        "course": "Computer Science Engineering",
+        "year": "First Year"
+    }
+]

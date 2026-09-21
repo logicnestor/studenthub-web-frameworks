@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Students</title>
+
+    <meta name="description"
+          content="Browse and search StudentHub student profiles.">
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+
+        <h1>StudentHub</h1>
+
+        <div class="nav-wrapper">
+
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode">
+                🌙
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav id="main-navigation"
+                 aria-label="Main Navigation">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registration</a>
+                <a href="events.html">Events</a>
+                <a href="students.html"
+                   aria-current="page">Students</a>
+
+            </nav>
+
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="students-section">
+
+        <h2>Student Profiles</h2>
+
+        <p>
+            Search and explore student profiles dynamically
+            loaded from JSON data.
+        </p>
+
+
+        <!-- Search and Filter -->
+
+        <div class="students-controls">
+
+            <div>
+                <label for="student-search">
+                    Search Students
+                </label>
+
+                <input
+                    type="search"
+                    id="student-search"
+                    placeholder="Search by name or email..."
+                    autocomplete="off">
+            </div>
+
+
+            <div>
+                <label for="student-course">
+                    Filter by Course
+                </label>
+
+                <select id="student-course">
+
+                    <option value="all">
+                        All Courses
+                    </option>
+
+                    <option value="Computer Science Engineering">
+                        Computer Science Engineering
+                    </option>
+
+                    <option value="Information Technology">
+                        Information Technology
+                    </option>
+
+                    <option value="Computer Engineering">
+                        Computer Engineering
+                    </option>
+
+                    <option value="Mechanical Engineering">
+                        Mechanical Engineering
+                    </option>
+
+                </select>
+            </div>
+
+
+            <div>
+                <label for="student-sort">
+                    Sort Students
+                </label>
+
+                <select id="student-sort">
+
+                    <option value="name-asc">
+                        Name: A-Z
+                    </option>
+
+                    <option value="name-desc">
+                        Name: Z-A
+                    </option>
+
+                    <option value="year-asc">
+                        Year: Low to High
+                    </option>
+
+                    <option value="year-desc">
+                        Year: High to Low
+                    </option>
+
+                </select>
+            </div>
+
+        </div>
+
+
+        <!-- Loading -->
+
+        <p
+            id="students-loading"
+            class="loading-message"
+            role="status"
+            aria-live="polite">
+
+            Loading students...
+
+        </p>
+
+
+        <!-- Error -->
+
+        <p
+            id="students-error"
+            class="error-message"
+            role="alert"
+            hidden>
+        </p>
+
+
+        <!-- Dynamic Student Profiles -->
+
+        <div
+            id="students-container"
+            class="students-grid"
+            aria-live="polite">
+        </div>
+
+
+        <!-- Pagination -->
+
+        <nav
+            id="students-pagination"
+            class="pagination"
+            aria-label="Student profile pagination">
+        </nav>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+
+        <address>
+            Email:
+            <a href="mailto:info@studenthub.com">
+                info@studenthub.com
+            </a>
+        </address>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+<script src="../js/students.js"></script>
+
+</body>
+
+</html>

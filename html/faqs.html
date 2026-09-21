@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | FAQs</title>
+
+    <meta name="description"
+          content="Frequently asked questions about StudentHub.">
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+
+        <h1>StudentHub</h1>
+
+        <div class="nav-wrapper">
+
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode">
+                🌙
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav id="main-navigation"
+                 aria-label="Main Navigation">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registration</a>
+                <a href="events.html">Events</a>
+                <a href="students.html">Students</a>
+                <a href="faqs.html"
+                   aria-current="page">FAQs</a>
+
+            </nav>
+
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="dynamic-faq-section">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <p>
+            Search frequently asked questions about StudentHub.
+        </p>
+
+
+        <!-- Search -->
+
+        <div class="faq-search">
+
+            <label for="faq-search">
+                Search FAQs
+            </label>
+
+            <input
+                type="search"
+                id="faq-search"
+                placeholder="Search questions..."
+                autocomplete="off">
+
+        </div>
+
+
+        <!-- Loading -->
+
+        <p
+            id="faqs-loading"
+            class="loading-message"
+            role="status"
+            aria-live="polite">
+
+            Loading FAQs...
+
+        </p>
+
+
+        <!-- Error -->
+
+        <p
+            id="faqs-error"
+            class="error-message"
+            role="alert"
+            hidden>
+        </p>
+
+
+        <!-- Dynamic FAQs -->
+
+        <div
+            id="faqs-container"
+            class="dynamic-faq-list"
+            aria-live="polite">
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+
+        <address>
+            Email:
+            <a href="mailto:info@studenthub.com">
+                info@studenthub.com
+            </a>
+        </address>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+<script src="../js/faqs.js"></script>
+
+</body>
+
+</html>

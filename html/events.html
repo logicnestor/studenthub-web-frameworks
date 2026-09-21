@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Events</title>
+
+    <meta name="description"
+          content="View and search upcoming StudentHub events.">
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+
+        <h1>StudentHub</h1>
+
+        <div class="nav-wrapper">
+
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode">
+                🌙
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav id="main-navigation"
+                 aria-label="Main Navigation">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registration</a>
+                <a href="events.html"
+                   aria-current="page">
+                    Events
+                </a>
+
+            </nav>
+
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="events-section">
+
+        <h2>Upcoming Events</h2>
+
+        <p>
+            Explore upcoming StudentHub events and activities.
+        </p>
+
+
+        <!-- Search and Filter Controls -->
+
+        <div class="events-controls">
+
+            <div class="event-search">
+
+                <label for="event-search">
+                    Search Events
+                </label>
+
+                <input
+                    type="search"
+                    id="event-search"
+                    placeholder="Search by event name or location..."
+                    autocomplete="off">
+
+            </div>
+
+
+            <div class="event-filter">
+
+                <label for="event-category">
+                    Filter by Category
+                </label>
+
+                <select id="event-category">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="Technical">
+                        Technical
+                    </option>
+
+                    <option value="Workshop">
+                        Workshop
+                    </option>
+
+                    <option value="Seminar">
+                        Seminar
+                    </option>
+
+                    <option value="Sports">
+                        Sports
+                    </option>
+
+                    <option value="Cultural">
+                        Cultural
+                    </option>
+
+                    <option value="Career">
+                        Career
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="event-sort">
+
+                <label for="event-sort">
+                    Sort Events
+                </label>
+
+                <select id="event-sort">
+
+                    <option value="date-asc">
+                        Date: Earliest First
+                    </option>
+
+                    <option value="date-desc">
+                        Date: Latest First
+                    </option>
+
+                    <option value="title-asc">
+                        Title: A-Z
+                    </option>
+
+                    <option value="title-desc">
+                        Title: Z-A
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Loading State -->
+
+        <p id="events-loading"
+           class="loading-message"
+           role="status"
+           aria-live="polite">
+
+            Loading events...
+
+        </p>
+
+
+        <!-- Error State -->
+
+        <p id="events-error"
+           class="error-message"
+           role="alert"
+           hidden>
+
+        </p>
+
+
+        <!-- Dynamic Event List -->
+
+        <div id="events-container"
+             class="events-grid"
+             aria-live="polite">
+
+        </div>
+
+
+        <!-- Pagination -->
+
+        <nav
+            class="pagination"
+            id="events-pagination"
+            aria-label="Events pagination">
+
+        </nav>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+
+        <address>
+            Email:
+            <a href="mailto:info@studenthub.com">
+                info@studenthub.com
+            </a>
+        </address>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+<script src="../js/events.js"></script>
+
+</body>
+
+</html>

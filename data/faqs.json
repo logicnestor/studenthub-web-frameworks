@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "question": "What is StudentHub?",
+        "answer": "StudentHub is a centralized web platform for accessing student-related academic information and resources."
+    },
+    {
+        "id": 2,
+        "question": "How can I register?",
+        "answer": "Open the Registration page from the navigation menu and complete the registration form."
+    },
+    {
+        "id": 3,
+        "question": "How can I log in?",
+        "answer": "Open the Login page and enter your registered username and password."
+    },
+    {
+        "id": 4,
+        "question": "Where can I check attendance?",
+        "answer": "Students can view their attendance from the Attendance section of the student dashboard."
+    },
+    {
+        "id": 5,
+        "question": "Where are assignments displayed?",
+        "answer": "Assignments are available through the Assignments section of StudentHub."
+    },
+    {
+        "id": 6,
+        "question": "Can students download study materials?",
+        "answer": "Yes, students can access and download available study materials from the Study Materials section."
+    },
+    {
+        "id": 7,
+        "question": "How can I update my profile?",
+        "answer": "Open the Profile section to view and update available profile information."
+    },
+    {
+        "id": 8,
+        "question": "Where can I find upcoming events?",
+        "answer": "Upcoming college events are displayed on the Events page."
+    },
+    {
+        "id": 9,
+        "question": "Can I search for an event?",
+        "answer": "Yes, the Events page provides a search feature for finding events by their details."
+    },
+    {
+        "id": 10,
+        "question": "Can events be filtered?",
+        "answer": "Yes, events can be filtered according to their category."
+    },
+    {
+        "id": 11,
+        "question": "Can student records be searched?",
+        "answer": "Yes, the student data view provides search functionality."
+    },
+    {
+        "id": 12,
+        "question": "How is event data loaded?",
+        "answer": "Event data is loaded dynamically from a JSON file using the JavaScript Fetch API."
+    },
+    {
+        "id": 13,
+        "question": "What happens if the data cannot be loaded?",
+        "answer": "StudentHub displays an error message when the JSON data cannot be fetched."
+    },
+    {
+        "id": 14,
+        "question": "Does StudentHub support dark mode?",
+        "answer": "Yes, the theme switcher allows users to switch between light and dark themes."
+    },
+    {
+        "id": 15,
+        "question": "Is StudentHub responsive?",
+        "answer": "Yes, the interface is designed to work across mobile, tablet, and desktop screen sizes."
+    }
+]

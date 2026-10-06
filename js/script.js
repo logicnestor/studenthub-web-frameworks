@@ -1071,81 +1071,56 @@ if (registrationForm) {
     );
 
 
-    registrationForm.addEventListener(
-        "submit",
-        function (event) {
+    registrationForm.addEventListener("submit", function (event) {
 
-            event.preventDefault();
+    const isNameValid = validateName();
+    const isEmailValid = validateEmail();
+    const isMobileValid = validateMobile();
+    const isPasswordValid = validatePassword();
+    const isConfirmPasswordValid = validateConfirmPassword();
 
+    const isCourseValid =
+        validateSelect(courseInput, "course-error", "a course");
 
-            const isNameValid =
-                validateName();
+    const isYearValid =
+        validateSelect(yearInput, "year-error", "a year");
 
-            const isEmailValid =
-                validateEmail();
+    const isGenderValid = validateGender();
+    const isTermsValid = validateTerms();
 
-            const isMobileValid =
-                validateMobile();
-
-            const isPasswordValid =
-                validatePassword();
-
-            const isConfirmPasswordValid =
-                validateConfirmPassword();
-
-            const isCourseValid =
-                validateSelect(
-                    courseInput,
-                    "course-error",
-                    "a course"
-                );
-
-            const isYearValid =
-                validateSelect(
-                    yearInput,
-                    "year-error",
-                    "a year"
-                );
-
-            const isGenderValid =
-                validateGender();
-
-            const isTermsValid =
-                validateTerms();
+    const isFormValid =
+        isNameValid &&
+        isEmailValid &&
+        isMobileValid &&
+        isPasswordValid &&
+        isConfirmPasswordValid &&
+        isCourseValid &&
+        isYearValid &&
+        isGenderValid &&
+        isTermsValid;
 
 
-            const isFormValid =
-                isNameValid &&
-                isEmailValid &&
-                isMobileValid &&
-                isPasswordValid &&
-                isConfirmPasswordValid &&
-                isCourseValid &&
-                isYearValid &&
-                isGenderValid &&
-                isTermsValid;
+    if (!isFormValid) {
 
+        event.preventDefault();
 
-            if (!isFormValid) {
+        formMessage.textContent =
+            "Please correct the errors above.";
 
-                formMessage.textContent =
-                    "Please correct the errors above.";
+        formMessage.className =
+            "form-message error";
 
-                formMessage.className =
-                    "form-message error";
+        return;
+    }
 
-                return;
+    /*
+     * Do not call event.preventDefault()
+     * when the form is valid.
+     *
+     * The browser will submit the form
+     * to register.php using POST.
+     */
 
-            }
-
-
-            formMessage.textContent =
-                "Registration successful!";
-
-            formMessage.className =
-                "form-message success";
-
-        }
-    );
+});
 
 }

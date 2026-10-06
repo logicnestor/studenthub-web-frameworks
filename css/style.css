@@ -2659,3 +2659,62 @@ body.dark-theme .dynamic-faq-item .faq-question:hover {
 body.dark-theme .dynamic-faq-item .faq-answer {
     background-color: #222222;
 }
+
+/* ==========================================
+   Stored Registration Records
+   Practical 7 Extension
+========================================== */
+
+.registration-records {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.registration-records h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.registration-records > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.registration-records .table-container {
+    overflow-x: auto;
+}
+
+.registration-records table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    background: white;
+}
+
+.registration-records th,
+.registration-records td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+.registration-records th {
+    background: #1f3c88;
+    color: white;
+}
+
+.registration-records tbody tr:nth-child(even) {
+    background: #f4f6f9;
+}
+
+body.dark-theme .registration-records table {
+    background: #222222;
+}
+
+body.dark-theme .registration-records td {
+    border-color: #444444;
+}
+
+body.dark-theme .registration-records tbody tr:nth-child(even) {
+    background: #2a2a2a;
+}

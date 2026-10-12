@@ -87,9 +87,31 @@
 
 
             <form id="registration-form"
-                  action="../php/register.php"
+                  action="../php/register-user.php"
                   method="post"
                   novalidate>
+
+                
+                <div class="form-group">
+    <label for="username">Username</label>
+
+    <input
+        type="text"
+        id="username"
+        name="username"
+        minlength="4"
+        maxlength="50"
+        autocomplete="username"
+        required
+        aria-describedby="username-error"
+    >
+
+    <small
+        id="username-error"
+        class="error-message"
+        aria-live="polite">
+    </small>
+</div>
 
 
                 <!-- Name -->
@@ -223,7 +245,7 @@
                     <input
                         type="password"
                         id="confirm-password"
-                        name="confirm-password"
+                        name="confirm_password"
                         placeholder="Re-enter your password"
                         autocomplete="new-password"
                         aria-describedby="confirm-password-error"

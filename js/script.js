@@ -1073,11 +1073,13 @@ if (registrationForm) {
 
     registrationForm.addEventListener("submit", function (event) {
 
+    const validUsername = validateUsername();
     const isNameValid = validateName();
     const isEmailValid = validateEmail();
     const isMobileValid = validateMobile();
     const isPasswordValid = validatePassword();
     const isConfirmPasswordValid = validateConfirmPassword();
+    
 
     const isCourseValid =
         validateSelect(courseInput, "course-error", "a course");
@@ -1089,6 +1091,7 @@ if (registrationForm) {
     const isTermsValid = validateTerms();
 
     const isFormValid =
+        validUsername &&
         isNameValid &&
         isEmailValid &&
         isMobileValid &&
@@ -1122,5 +1125,43 @@ if (registrationForm) {
      */
 
 });
+
+const usernameRegex = /^[A-Za-z0-9_]{4,50}$/;
+
+function validateUsername() {
+    const username = document.querySelector("#username");
+    const error = document.querySelector("#username-error");
+
+    if (!username || !error) {
+        return true;
+    }
+
+    const value = username.value.trim();
+
+    if (value === "") {
+        error.textContent = "Username is required.";
+        username.setAttribute("aria-invalid", "true");
+        return false;
+    }
+
+    if (!usernameRegex.test(value)) {
+        error.textContent =
+            "Username must contain 4-50 letters, numbers, or underscores.";
+        username.setAttribute("aria-invalid", "true");
+        return false;
+    }
+
+    error.textContent = "";
+    username.setAttribute("aria-invalid", "false");
+
+    return true;
+}
+
+const usernameInput = document.querySelector("#username");
+
+if (usernameInput) {
+    usernameInput.addEventListener("input", validateUsername);
+    usernameInput.addEventListener("blur", validateUsername);
+}
 
 }

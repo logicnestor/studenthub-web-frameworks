@@ -66,7 +66,7 @@ $adminEmail = htmlspecialchars(
                 <h3>Quick Management</h3>
                 <nav class="dashboard-nav" aria-label="Administrator Actions">
                     <ul>
-                        <li><a href="#">Manage Students</a></li>
+                        <li><a href="../php/manage-students.php">Manage Students</a></li>
                         <li><a href="#">Manage Faculty</a></li>
                         <li><a href="#">Manage Departments</a></li>
                         <li><a href="#">Manage Attendance</a></li>

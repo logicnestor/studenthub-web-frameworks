@@ -67,6 +67,7 @@ $adminEmail = htmlspecialchars(
                 <nav class="dashboard-nav" aria-label="Administrator Actions">
                     <ul>
                         <li><a href="../php/manage-students.php">Manage Students</a></li>
+                        <li><a href="../php/manage-events.php">Manage Events</a></li>
                         <li><a href="#">Manage Faculty</a></li>
                         <li><a href="#">Manage Departments</a></li>
                         <li><a href="#">Manage Attendance</a></li>

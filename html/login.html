@@ -1,80 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>StudentHub | Login</title>
-        <meta name="description" content="Login to StudenHub">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
+    <title>StudentHub | Login</title>
+    <meta name="description" content="Login to StudentHub">
 
-        <header>
-            <div class="container">
-                <h1>StudentHub</h1>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>StudentHub</h1>
 
             <nav aria-label="Main Navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="login.html" aria-current="page">Login</a>
+                <a href="registration.html">Registration</a>
             </nav>
-            </div>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <section class="login-section">
+    <main>
+        <section class="login-section">
 
-                <h2>Login</h2>
+            <h2>Login</h2>
 
-                <form action="#" method="post">
-                    
-                    <p>
-                        <label for="role">Select Role</label><br>
-                        <select id="role" name="role" required>
-                            <option value="">--Select Role--</option>
-                            <option value="student">Student</option>
-                            <option value="faculty">Faculty</option>
-                            <option value="admin">Admin</option>
-                        </select>
-                    </p>
+            <p>Enter your username or email and password to continue.</p>
 
-                    <p>
-                        <label for="username">
-                            Enrollment Number / Username
-                        </label><br>
-
-                        <input type="text" id="username" name="username" placeholder="Enter Enrollment Number or Username" required>
-
-                    </p>
-
-                    <p>
-                        <label for="password">
-                            Password
-                        </label><br>
-
-                        <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                    </p>
-
-                    <p>
-                        <button type="submit">Login</button>
-                    </p>
-                </form>
+            <form action="../php/login-process.php" method="post">
 
                 <p>
-                    <a href="#">Forgot Password?</a>
+                    <label for="login-identifier">
+                        Username or Email
+                    </label><br>
+
+                    <input
+                        type="text"
+                        id="login-identifier"
+                        name="login_identifier"
+                        placeholder="Enter username or email"
+                        autocomplete="username"
+                        required>
                 </p>
 
-            </section>
-        </main>
-
-        <footer>
-            <div class="container">
                 <p>
-                &copy; 2026 StudentHub.
-                All Rights Reserved.
+                    <label for="password">Password</label><br>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter password"
+                        autocomplete="current-password"
+                        required>
+                </p>
+
+                <p>
+                    <label for="remember-me">
+                        <input
+                            type="checkbox"
+                            id="remember-me"
+                            name="remember_me"
+                            value="1">
+                        Remember me for 30 days
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Login</button>
+                </p>
+
+            </form>
+
+            <p id="login-message" role="status" aria-live="polite"></p>
+
+            <p>
+                <a href="#">Forgot Password?</a>
             </p>
-            </div>
-        </footer>
-    </body>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2026 StudentHub. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const reason = params.get("reason");
+        const message = document.getElementById("login-message");
+
+        if (reason === "timeout") {
+            message.textContent =
+                "Your session expired. Please log in again.";
+        } else if (reason === "login") {
+            message.textContent =
+                "Please log in to access that page.";
+        } else if (reason === "loggedout") {
+            message.textContent =
+                "You have been logged out successfully.";
+        } else if (reason === "invalid") {
+            message.textContent =
+                "Invalid username/email or password.";
+        }
+    </script>
+
+</body>
 </html>
